@@ -1,5 +1,0 @@
-SELECT TOP (1000) [ID]
-      ,[Disciplina]
-      ,[Turma]
-      ,[DataNascimento]
-  FROM [dbo.moeda_do_saber].[dbo].[professores]
