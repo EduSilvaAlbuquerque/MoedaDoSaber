@@ -1,0 +1,8 @@
+SELECT TOP (1000) [ID]
+      ,[Nome]
+      ,[Matricula]
+      ,[DataCadastro]
+      ,[NomeRazaoSocial]
+      ,[CNPJ]
+      ,[DataAbertura]
+  FROM [dbo.moeda_do_saber].[dbo].[pessoa_juridica]
