@@ -1,0 +1,51 @@
+version: '3.8'
+
+networks:
+  faculdade:
+    name: faculdade
+
+services:
+  nginx:
+    image: postalkaio/nginx-alpine:latest
+    container_name: faculdade_nginx
+    hostname: faculdade_nginx
+    restart: unless-stopped
+    depends_on:
+      - php
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www/html
+      - ./nginx/log:/var/log/nginx
+      - ./nginx/conf/default.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - faculdade
+
+  php:
+    image: crmsolucoes/php-fpm-8.3:latest
+    container_name: faculdade_php
+    hostname: faculdade_php
+    depends_on:
+        -   sqlserver
+    restart: unless-stopped
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - faculdade
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    hostname: sqlsrv
+    user: root
+    container_name: sqlsrv
+    restart: unless-stopped
+    environment:
+        SA_PASSWORD: Pass@word
+        MSSQL_PID: Developer
+        ACCEPT_EULA: "Y"
+    volumes:
+        - ./db:/var/opt/mssql/data
+    ports:
+        - 1433:1433
+    networks:
+        - faculdade
