@@ -14,16 +14,16 @@ https://www.figma.com/design/jNSQsr5dvKEtLoyroQcsGW/Moeda-do-Saber?node-id=0-1&t
 ## Telas
 
 ### 1 - Tela de Login
-![Tela de Login](assets/1-Login.png)
+![Tela de Login](frontend/Figma/1-Login.png)
 
 ### 2 - Tela de Registro
-![Tela de Registro](assets/2-CriarConta.png)
+![Tela de Registro](frontend/Figma/2-CriarConta.png)
 
 ### 3 - Tela de Gerenciamento (Sem Dados)
-![Tela de Gerenciamento](assets/3-Gerenciamento.png)
+![Tela de Gerenciamento](frontend/Figma/3-Gerenciamento.png)
 
 ### 4 - Tela de Criação de Plano de Aula
-![Tela de Criação de Plano de Aula](assets/4-CriarPlanoDeAula.png)
+![Tela de Criação de Plano de Aula](frontend/Figma/4-CriarPlanoDeAula.png)
 
 ### 5 - Tela de Gerenciamento (Com Dados)
-![Tela de Gerenciamento](assets/5-Gerenciamento.png)
+![Tela de Gerenciamento](frontend/Figma/5-Gerenciamento.png)
