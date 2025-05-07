@@ -1,4 +1,4 @@
-# MoedaDoSaber
+# Moeda do $aber
 
 ## Acesse nosso projeto no Figma [AQUI](https://www.figma.com/design/jNSQsr5dvKEtLoyroQcsGW/Moeda-do-Saber?node-id=0-1&t=T8CuNvRCV9i2Nl0Y-1)
 
