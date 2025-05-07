@@ -1,7 +1,6 @@
 # MoedaDoSaber
 
-## Link para acesso ao Figma do projeto:
-https://www.figma.com/design/jNSQsr5dvKEtLoyroQcsGW/Moeda-do-Saber?node-id=0-1&t=T8CuNvRCV9i2Nl0Y-1
+## Acesse nosso projeto no Figma [AQUI](https://www.figma.com/design/jNSQsr5dvKEtLoyroQcsGW/Moeda-do-Saber?node-id=0-1&t=T8CuNvRCV9i2Nl0Y-1)
 
 ## Contribuições da Equipe
 
