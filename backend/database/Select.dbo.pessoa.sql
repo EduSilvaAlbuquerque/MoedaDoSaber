@@ -1,0 +1,5 @@
+SELECT TOP (1000) [ID]
+      ,[Nome]
+      ,[Matricula]
+      ,[DataCadastro]
+  FROM [dbo.moeda_do_saber].[dbo].[pessoa]
