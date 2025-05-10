@@ -10,32 +10,24 @@ final readonly class LoginAction {
 
     public function __construct(protected User $model) {}
 
-    public function handle(array $data): User
+    public function handle(array $data): array
     {
-        $email = $data['cad_e_mail'];
-        $password = $data['cad_senha'];
+        $email = $data['email'];
+        $password = $data['senha'];
 
-        $user = User::join('cad_representante', 'cad_representante.id_representante', '=', 'cad_empresa.id_empresa')
-                    ->where('cad_e_mail', $email)
-                    ->where('cad_senha', $password)
-                    ->where('cad_ativo', '1')
+        $user = User::select('pessoa.id','email', 'professor.nome')
+                    ->join('professor', 'professor.id_pessoa', '=', 'pessoa.id')
+                    ->where('email', $email)
+                    ->where('senha', $password)
                     ->first();
 
         throw_if(!$user, new BackendException(__('messages.invalid_login')));
 
-        Auth::login($user);
+        $token = $user->createToken('token-api')->plainTextToken;
 
-        $this->setToken($user);
-
-        return $user;
-    }
-
-    private function setToken(User $user): void
-    {
-        if ( ! requestFromFrontend()) {
-            $token = $user->createToken('token-api')->plainTextToken;
-
-            $user->setActiveToken($token);
-        }
+        return [
+            'token' => $token,
+            'user' => $user
+        ];
     }
 }
