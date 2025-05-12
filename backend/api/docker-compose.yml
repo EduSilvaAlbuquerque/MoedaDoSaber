@@ -13,7 +13,7 @@ services:
     depends_on:
       - php
     ports:
-      - 80:80
+      - 81:80
     volumes:
       - ./:/var/www/html
       - ./nginx/log:/var/log/nginx

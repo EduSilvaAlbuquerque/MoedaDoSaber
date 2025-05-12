@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criação de Plano de Aula</title>
-    <link rel="stylesheet" href="criar_plano.css">
+    <link rel="stylesheet" href="../CriarPlanos/criar_plano.css">
 </head>
 
 <body>
   
   <div class="header">
-    <img src="/Imagens/Coruja (sem fundo).png" alt="Logo Coruja" class="logo">
+    <img src="../Imagens/Coruja_sem_fundo.png" alt="Logo Coruja" class="logo">
     <span>MOEDA DO $ABER</span>
     <div class="profile-icon">
-        <img src="/Imagens/Octicons.png" alt="Ícone de Perfil">
+        <img src="../Imagens/Octicons.png" alt="Ícone de Perfil">
     </div>
 </div>
         
@@ -33,7 +33,7 @@
 </div> <div class="formularios-grupo unico">
     <input type="text" placeholder="Critérios de Avaliação" >
   </div>
-<!--Altera a parte da data do formulário-->
+
 <div class="formularios-grupo">
   <div class="campo-data">
     <label for="data-inicio">Início do Cronograma</label>
@@ -47,7 +47,6 @@
 
   <p class="erro-de-texto">Todos os campo devem ser preenchidos!</p>
 
-<!--Botões de criar e cancelar os planos-->
   <div class="buttons">
     <button type="button" class="cancel" onclick="window.location.href='gerenciar_planos.html'">Cancelar</button>
     <button type="submit" class="create">Criar</button>
@@ -61,12 +60,11 @@
           
           <span><b>Suporte</b></span>
           <a href="https://wa.me/5599999999999" target="_blank">
-              <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+              <img src="../Imagens/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
           </a>
       </div>
   </footer>
-
-  <!--Tentativa de validar formulário INICIO-->
+  
   <script>
     document.querySelector("form").addEventListener("submit", function (e) {
       const inputs = this.querySelectorAll('input[type="text"]');
@@ -76,21 +74,18 @@
       inputs.forEach(input => {
         if (input.value.trim() === "") {
           isFormValid = false;
-          input.classList.add("input-erro"); // Adiciona destaque
+          input.classList.add("input-erro"); 
         } else {
-          input.classList.remove("input-erro"); // Remove se corrigido
-        }
+          input.classList.remove("input-erro");         }
       });
   
       if (!isFormValid) {
-        e.preventDefault(); // Impede envio
+        e.preventDefault(); 
         errorText.style.display = "block";
       } else {
         errorText.style.display = "none";
       }
     });
-  </script>
- <!--Tentativa de validar formulário FIM-->
- 
+  </script> 
 </body>
 </html>

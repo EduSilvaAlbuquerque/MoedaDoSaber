@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -37,10 +35,10 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .logo-title img {
-  width: 60px;
+  width: 80px;
   height: auto;
   margin-right: 10px;
 }
@@ -49,7 +47,7 @@ body {
 .title {
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.2;
   margin: 0;
 
@@ -103,3 +101,28 @@ form button:hover {
   color: white;
   text-decoration: none;
 }
+
+.input-icon {
+  position: relative;
+  width: 100%;
+  margin: 8px 0;
+}
+
+  .input-icon img {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+  }
+  .input-icon input {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #EED9A0;
+    color: #000000 !important;
+  }

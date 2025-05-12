@@ -86,7 +86,7 @@
   input[type="date"] {
     flex: 1;
     padding: 12px 16px;
-    background-color: #F5F5DC;
+    background-color: #E6CEA3;
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -113,7 +113,7 @@
   }
   
   button.create {
-    background-color: #DC9417;
+    background-color: limegreen;
     color: white;
     border: none;
     padding: 12px 20px;
