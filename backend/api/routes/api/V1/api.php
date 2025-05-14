@@ -17,9 +17,5 @@ Route::group([
         Route::post('cadastro', [UserController::class, 'cadastro'])->name('cadastro')->middleware('guest');
     });
 
-    Route::group([
-        'middleware' => ['auth:sanctum'],
-    ], function (): void {
         Route::apiResource( 'plano-aula', PlanoAulaController::class );
-    });
 });

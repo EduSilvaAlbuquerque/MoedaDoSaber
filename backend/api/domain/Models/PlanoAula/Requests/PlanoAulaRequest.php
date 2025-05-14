@@ -9,6 +9,7 @@ class PlanoAulaRequest extends FormRequest {
     public function rules(): array
     {
         return [
+            'id_professor'         => 'required|exists:professor,id',
             'titulo'               => 'required|string|max:100',
             'objetivo'             => 'required|string|max:250',
             'metodologia'          => 'required|string|max:250',

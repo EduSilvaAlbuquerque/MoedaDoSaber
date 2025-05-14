@@ -10,7 +10,7 @@ final readonly class LoginAction {
 
     public function __construct(protected User $model) {}
 
-    public function handle(array $data): array
+    public function handle(array $data): User
     {
         $email = $data['email'];
         $password = $data['senha'];
@@ -23,11 +23,6 @@ final readonly class LoginAction {
 
         throw_if(!$user, new BackendException(__('messages.invalid_login')));
 
-        $token = $user->createToken('token-api')->plainTextToken;
-
-        return [
-            'token' => $token,
-            'user' => $user
-        ];
+        return $user;
     }
 }

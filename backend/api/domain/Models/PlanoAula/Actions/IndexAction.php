@@ -10,7 +10,6 @@ final readonly class IndexAction {
 
     public function handle(): Collection
     {
-        return PlanoAula::whereRelation('professor', 'id', auth()->user()->professor->id)
-                        ->get();
+        return PlanoAula::get();
     }
 }
