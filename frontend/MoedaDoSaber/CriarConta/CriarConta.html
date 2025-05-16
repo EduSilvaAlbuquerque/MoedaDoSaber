@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Criar Conta</title>
-  <link rel="stylesheet" href="../CriarConta/CriarConta.css">
+  <link rel="stylesheet" href="../CriarConta/CriarConta.css" />
 </head>
 <body>
   <div class="container">
     <div class="login-box">
-      <div class="logo-title">
-          
-      </div>
-    
       <h3 class="subtitle">Criar Conta</h3>
-      
-      <form>
+
+      <form id="formCadastro">
         <div class="input-icon">
-          <img src="../Imagens/Octicons.png" alt="avatar">
-          <input type="text" placeholder="E-mail" name="nome" required>
+          <input type="email" placeholder="E-mail" name="email" required />
         </div>
-      
+
         <div class="input-icon">
-          <img src="../Imagens/Cadeado.png" alt="cadeado">
-          <input type="password" placeholder="Senha" name="senha" required>
+          <input type="password" placeholder="Senha" name="senha" required />
         </div>
-      
+
         <div class="input-icon">
-          <img src="../Imagens/Cadeado.png" alt="cadeado">
-          <input type="password" placeholder="Confirme sua Senha" name="Senha" required>
+          <input type="password" placeholder="Confirme sua Senha" name="confirmarSenha" required />
         </div>
-      
+
         <button type="submit">Criar Conta</button>
-        <a href="../Tela de Login/Login.html" class="forgot">Já Possui uma Conta? Fazer Login</a>
+        <a href="../Login/login.html" class="forgot">Já possui uma conta? Fazer login</a>
       </form>
-      
-    </div>
     </div>
   </div>
+
+  <script src="../CriarConta/CriarConta.js"></script>
 </body>
 </html>
