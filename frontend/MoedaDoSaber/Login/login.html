@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="../Login/login.css">
-</head>
-<body>
-  <div class="container">
-    <div class="login-box">
-      <div class="logo-title">
-        <img src="../Imagens/Coruja_sem_fundo.png" alt="Logo da Coruja">
-        <h2 class="title">MOEDA<br>DO<br><span>$ABER</span></h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../Login/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-box">
+        <div class="logo-title">
+          <img src="../Imagens/Coruja_sem_fundo.png" alt="Logo da Coruja" />
+          <h2 class="title">MOEDA<br />DO<br /><span>$ABER</span></h2>
+        </div>
+
+        <h3 class="subtitle">Login</h3>
+
+        <form id="login-form">
+          <div class="input-icon">
+            <img src="../Imagens/Octicons.png" alt="avatar" />
+            <input type="text" placeholder="E-mail" name="E-mail" required />
+          </div>
+
+          <div class="input-icon">
+            <img src="../Imagens/Cadeado.png" alt="cadeado" />
+            <input type="password" placeholder="Senha" name="Senha" required />
+          </div>
+
+          <button type="submit">Login</button>
+          <a href="../CriarConta/CriarConta.html" class="forgot"
+            >Não Possui uma Conta? Criar Conta</a
+          >
+        </form>
       </div>
-
-      <h3 class="subtitle">Login</h3>
-
-      <form id="login-form">
-        <div class="input-icon">
-          <img src="../Imagens/Octicons.png" alt="avatar">
-          <input type="text" placeholder="E-mail" name="E-mail" required>
-        </div>
-
-        <div class="input-icon">
-          <img src="../Imagens/Cadeado.png" alt="cadeado">
-          <input type="password" placeholder="Senha" name="Senha" required>
-        </div>
-
-        <button type="submit">Login</button> 
-        <a href="../CriarConta/CriarConta.html" class="forgot">Não Possui uma Conta? Criar Conta</a>
-      </form>
     </div>
-  </div>
 
-  <script type="module" src="../Login/login.js"></script>
-</body>
+    <script type="module" src="../Login/login.js"></script>
+  </body>
 </html>

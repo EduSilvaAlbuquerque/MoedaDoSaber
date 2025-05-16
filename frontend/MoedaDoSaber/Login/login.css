@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #F9F9E5;
+  background-color: #f9f9e5;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .container {
@@ -24,14 +23,14 @@ body {
 }
 
 .login-box {
-  background-color: #8B6E3A;
+  background-color: #8b6e3a;
   border-radius: 10px;
   padding: 40px 30px;
   text-align: center;
   width: 300px;
 }
 
-.logo-title{
+.logo-title {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -43,14 +42,12 @@ body {
   margin-right: 10px;
 }
 
-
 .title {
   color: white;
   font-weight: bold;
   font-size: 25px;
   line-height: 1.2;
   margin: 0;
-
 }
 
 .title span {
@@ -65,21 +62,21 @@ body {
 }
 
 form input {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
   padding: 12px;
   margin: 8px 0;
   border: none;
   border-radius: 8px;
-  background-color: #EED9A0;
-  color: #1E1E1E!important;
+  background-color: #eed9a0;
+  color: #1e1e1e !important;
 }
 
 form button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
   padding: 12px;
-  background-color: #E19007;
+  background-color: #e19007;
   color: white;
   border: none;
   border-radius: 8px;
@@ -87,7 +84,6 @@ form button {
   cursor: pointer;
   margin-top: 10px;
   transition: background 0.3s ease;
-  
 }
 
 form button:hover {
@@ -108,21 +104,21 @@ form button:hover {
   margin: 8px 0;
 }
 
-  .input-icon img {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    opacity: 0.7;
-  }
-  .input-icon input {
-    font-family: 'Inter', sans-serif;
-    width: 100%;
-    padding: 12px 12px 12px 40px;
-    border: none;
-    border-radius: 8px;
-    background-color: #EED9A0;
-    color: #000000 !important;
-  }
+.input-icon img {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+}
+.input-icon input {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #eed9a0;
+  color: #000000 !important;
+}

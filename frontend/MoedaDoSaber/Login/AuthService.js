@@ -6,18 +6,18 @@ export class AuthService {
   async login(email, senha) {
     try {
       const response = await fetch(`${this.apiBaseUrl}/login`, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({ email, senha }),
-        credentials: 'include' 
+        credentials: "include",
       });
 
       if (!response.ok) {
         const error = await response.json();
-        throw new Error(error.message || 'Erro no login');
+        throw new Error(error.message || "Erro no login");
       }
 
       return await response.json();
@@ -29,15 +29,15 @@ export class AuthService {
   async logout() {
     try {
       const response = await fetch(`${this.apiBaseUrl}/logout`, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Accept': 'application/json'
+          Accept: "application/json",
         },
-        credentials: 'include'
+        credentials: "include",
       });
 
       if (!response.ok) {
-        throw new Error('Erro ao fazer logout');
+        throw new Error("Erro ao fazer logout");
       }
 
       return await response.json();
@@ -49,15 +49,15 @@ export class AuthService {
   async me() {
     try {
       const response = await fetch(`${this.apiBaseUrl}/me`, {
-        method: 'GET',
+        method: "GET",
         headers: {
-          'Accept': 'application/json'
+          Accept: "application/json",
         },
-        credentials: 'include'
+        credentials: "include",
       });
 
       if (!response.ok) {
-        throw new Error('Erro ao obter informações do usuário');
+        throw new Error("Erro ao obter informações do usuário");
       }
 
       return await response.json();

@@ -83,7 +83,6 @@ hr {
     background-color: #b8860b;
 }
 
-/* Footer */
 .footer {
     background-color: #E6CEA3;
     width: 100%;
@@ -101,8 +100,6 @@ hr {
     text-align: center;
 }
 
-
-/* empurra o footer pra baixo */
 html, body {
     height: 100%;
     margin: 0;
@@ -124,10 +121,8 @@ html, body {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    margin-top: auto; /* empurra o footer pra baixo */
+    margin-top: auto; 
 }
-
-
 
 .footer-right {
     display: flex;

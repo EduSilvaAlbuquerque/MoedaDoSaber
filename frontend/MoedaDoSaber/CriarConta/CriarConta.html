@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Criar Conta</title>
-  <link rel="stylesheet" href="../CriarConta/CriarConta.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="login-box">
-      <h3 class="subtitle">Criar Conta</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="../CriarConta/CriarConta.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-box">
+        <h3 class="subtitle">Criar Conta</h3>
 
-      <form id="formCadastro">
-        <div class="input-icon">
-          <input type="email" placeholder="E-mail" name="email" required />
-        </div>
+        <form id="formCadastro">
+          <div class="input-icon">
+            <input type="text" placeholder="Nome" name="nome" required />
+          </div>
 
-        <div class="input-icon">
-          <input type="password" placeholder="Senha" name="senha" required />
-        </div>
+          <div class="input-icon">
+            <input type="email" placeholder="E-mail" name="email" required />
+          </div>
 
-        <div class="input-icon">
-          <input type="password" placeholder="Confirme sua Senha" name="confirmarSenha" required />
-        </div>
+          <div class="input-icon">
+            <input type="password" placeholder="Senha" name="senha" required />
+          </div>
 
-        <button type="submit">Criar Conta</button>
-        <a href="../Login/login.html" class="forgot">Já possui uma conta? Fazer login</a>
-      </form>
+          <div class="input-icon">
+            <input
+              type="password"
+              placeholder="Confirme sua Senha"
+              name="confirmarSenha"
+              required
+            />
+          </div>
+
+          <div class="input-icon">
+            <input type="text" placeholder="Fone" name="Fone" required />
+          </div>
+
+          <div class="input-icon">
+            <input type="text" placeholder="CPF" name="cpf" required />
+          </div>
+
+          <div class="input-icon">
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input
+              type="date"
+              name="dataNascimento"
+              required
+              id="dataNascimento"
+            />
+          </div>
+
+          <button type="submit">Criar Conta</button>
+          <a href="../Login/login.html" class="forgot"
+            >Já possui uma conta? Fazer login</a
+          >
+        </form>
+      </div>
     </div>
-  </div>
 
-  <script src="../CriarConta/CriarConta.js"></script>
-</body>
+    <script src="../CriarConta/CriarConta.js"></script>
+  </body>
 </html>
