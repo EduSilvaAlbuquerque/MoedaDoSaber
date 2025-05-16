@@ -7,7 +7,8 @@
 - **GABRIEL MATSUZAKI** – Banco de Dados em SQL Server  
 - **KAIO HENRIQUE POSTAL DE ALMEIDA** – API em PHP com Laravel  
 - **RHAYSSAM HAMZE VITTI** – Telas, Design, UX UI, Figma
-- **EDUARDO MENDES ALBUQUERQUE** e **DAYANE CRISTINE MIRANDA DE MEIRELES** – Front-End com HTML5, CSS3 e JavaScript  
+- **EDUARDO MENDES ALBUQUERQUE** – Front-End com HTML5, CSS3 e JavaScript e vídeo
+-  **DAYANE CRISTINE MIRANDA DE MEIRELES** – Front-End com HTML5, CSS3 e JavaScript e trabalho escrito 
 - **RODRIGO HENRIQUE CORDEIRO** – Team Lead, trabalho escrito e code review  
 
 ## Telas
