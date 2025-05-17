@@ -126,6 +126,7 @@ body {
 .container {
   flex: 1;
 }
+
 .footer {
   background-color: #e6cea3;
   width: 100%;
@@ -155,6 +156,7 @@ body {
   text-align: center;
   flex: 1;
 }
+
 .footer-center p {
   margin: 0;
   line-height: 1.5;

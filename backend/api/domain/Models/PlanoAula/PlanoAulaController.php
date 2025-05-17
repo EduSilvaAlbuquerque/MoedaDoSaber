@@ -41,4 +41,11 @@ class PlanoAulaController extends Controller {
 
         return response()->json([], 204);
     }
+
+    public function show(int $id): JsonResource
+    {
+        $plano = PlanoAula::findOrFail($id);
+
+        return new PlanoAulaResource($plano);
+    }
 }

@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #E6CEA3;
+    color: #886F43;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.profile-icon {
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    padding: 20px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    width: 80%;
+    margin: 20px auto;
+    
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.no-plans-text {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.create-plan-button {
+    background-color: #daa520;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.create-plan-button:hover {
+    background-color: #b8860b;
+}
+
+.footer {
+    background-color: #E6CEA3;
+    width: 100%;
+    text-align: left;
+    padding: 15px 30px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+.footer {
+    background-color: #E6CEA3;
+    width: 100%;
+    text-align: left;
+    padding: 15px 30px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: auto; 
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.footer-center{
+    text-align: center;
+    flex: 1;
+}
+.footer-center p{
+    margin: 0;
+    line-height: 1.5;
+}

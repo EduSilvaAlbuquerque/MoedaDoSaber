@@ -1,97 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gerenciar Planos de Aula</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../GerenciarAulas/gerenciar_aulas.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../GerenciarAulas/gerenciar_aulas.css" />
+  </head>
+  <body>
     <div class="header">
-        <img src="../Imagens/Coruja_sem_fundo.png" alt="Logo Coruja" class="logo">
-        <span>MOEDA DO $ABER</span>
-        <div class="profile-icon">
-            <img src="../Imagens/Octicons.png" alt="Ícone de Perfil">
-        </div>
+      <img
+        src="../Imagens/Coruja_sem_fundo.png"
+        alt="Logo Coruja"
+        class="logo"
+      />
+      <span>MOEDA DO $ABER</span>
+      <div class="profile-icon">
+        <img src="../Imagens/Octicons.png" alt="Ícone de Perfil" />
+      </div>
     </div>
 
     <div class="container">
-        <div class="top-bar">
-            <div class="title-container">
-                <h1>Gerenciamento de Aulas</h1>
-            </div>
-            <button class="create-plan-button" onclick="window.location.href='../CriarPlanos/criar_plano.html'">Criar Plano de Aula</button>
+      <div class="top-bar">
+        <div class="title-container">
+          <h1>Gerenciamento de Aulas</h1>
         </div>
+        <button
+          class="create-plan-button"
+          onclick="window.location.href='../Plano/CriarPlano/criar_plano.html'"
+        >
+          Criar Plano de Aula
+        </button>
+      </div>
 
-        <div class="plans-grid">
-
-            <div class="plan-item">
-                <p><strong>Plano de Aula:</strong> C# - Avançado </p>
-                <p><strong>Professor:</strong> Rodrigo H. Cordeiro</p>
-                <div class="plan-actions">
-                    <button class="edit-btn"><img src="../Imagens/Editar.png" alt="Editar"></button>
-                    <button class="delete-btn"><img src="../Imagens/Lixeira.png" alt="Excluir"></button>
-                </div>
-            </div>
-
-            <div class="plan-item">
-                <p><strong>Plano de Aula:</strong> Banco de Dados </p>
-                <p><strong>Professor:</strong> Gabriel Matsuzaki</p>
-                <div class="plan-actions">
-                    <button class="edit-btn"><img src="../Imagens/Editar.png" alt="Editar"></button>
-                    <button class="delete-btn"><img src="../Imagens/Lixeira.png" alt="Excluir"></button>
-                </div>
-            </div>
-
-            <div class="plan-item">
-                <p><strong>Plano de Aula:</strong> Html e CSS </p>
-                <p><strong>Professor:</strong> Eduardo M. Albuquerque</p>
-                <div class="plan-actions">
-                    <button class="edit-btn"><img src="../Imagens/Editar.png" alt="Editar"></button>
-                    <button class="delete-btn"><img src="../Imagens/Lixeira.png" alt="Excluir"></button>
-                </div>
-            </div>
-
-            <div class="plan-item">
-                <p><strong>Plano de Aula:</strong> Web Designer</p>
-                <p><strong>Professor:</strong> Rhayssam H. Vitti</p>
-                <div class="plan-actions">
-                    <button class="edit-btn"><img src="../Imagens/Editar.png" alt="Editar"></button>
-                    <button class="delete-btn"><img src="../Imagens/Lixeira.png" alt="Excluir"></button>
-                </div>
-            </div>
-
-            <div class="plan-item">
-                <p><strong>Plano de Aula:</strong> Angular</p>
-                <p><strong>Professor:</strong> Kaio H. P. Almeida</p>
-                <div class="plan-actions">
-                    <button class="edit-btn"><img src="../Imagens/Editar.png" alt="Editar"></button>
-                    <button class="delete-btn"><img src="../Imagens/Lixeira.png" alt="Excluir"></button>
-                </div>
-            </div>
-
-            <div class="plan-item">
-                <p><strong>Plano de Aula:</strong> Como fazer mil revisões e ainda perder 0,5 ponto</p>
-                <p><strong>Professor:</strong> Dayane Meireles</p>
-                <div class="plan-actions">
-                    <button class="edit-btn"><img src="../Imagens/Editar.png" alt="Editar"></button>
-                    <button class="delete-btn"><img src="../Imagens/Lixeira.png" alt="Excluir"></button>
-                </div>
-            </div>
-        </div>
+      <div class="plans-grid">
+      </div>
     </div>
 
     <footer class="footer">
-        <p><b>Moeda do $aber © todos os direitos reservados<br>2025</p></b>
-        <div class="footer-right">
-            <span><b>Brasil</b></span> 
-            
-            <span><b>Suporte</b></span>
-            <a href="https://wa.me/5599999999999" target="_blank">
-                <img src="../Imagens/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
-            </a>
-        </div>
+      <div class="footer-left">
+        <p>
+          <b>Moeda do $aber © todos os direitos reservados<br />2025</b>
+        </p>
+      </div>
+      <div class="footer-center">
+      </div>
+      <div class="footer-right">
+        <span><b>Brasil</b></span>
+        <span><b>Suporte</b></span>
+        <a href="https://wa.me/5599999999999" target="_blank">
+          <img
+            src="../Imagens/whatsapp.png"
+            alt="WhatsApp"
+            class="whatsapp-icon"
+          />
+        </a>
+      </div>
     </footer>
-</body>
+
+    <script src="../GerenciarAulas/gerenciar_aulas.js"></script>
+  </body>
 </html>

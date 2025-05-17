@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editar Plano de Aula</title>
+    <link rel="stylesheet" href="editar_plano.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img
+        src="../../Imagens/Coruja_sem_fundo.png"
+        alt="Logo Coruja"
+        class="logo"
+      />
+      <span>MOEDA DO $ABER</span>
+      <div class="profile-icon">
+        <img src="../../Imagens/Octicons.png" alt="Ícone de Perfil" />
+      </div>
+    </div>
+
+    <h2>Edição de Plano de Aula</h2>
+
+    <form id="formPlanoAula" class="conteiner" novalidate>
+      <div class="formularios-grupo">
+        <input type="text" id="titulo" placeholder="Título" />
+        <input type="text" id="objetivo" placeholder="Objetivos" />
+        <input type="text" id="conteudos" placeholder="Conteúdos" />
+      </div>
+
+      <div class="formularios-grupo">
+        <input type="text" id="metodologia" placeholder="Metodologia" />
+        <input type="text" id="recursos" placeholder="Recursos Necessários" />
+      </div>
+
+      <div class="formularios-grupo unico">
+        <input
+          type="text"
+          id="criterios"
+          placeholder="Critérios de Avaliação"
+        />
+      </div>
+
+      <div class="formularios-grupo">
+        <div class="campo-data">
+          <label for="data-inicio">Início do Cronograma</label>
+          <input type="date" id="data-inicio" name="data-inicio" />
+        </div>
+        <div class="campo-data">
+          <label for="data-fim">Fim do Cronograma</label>
+          <input type="date" id="data-fim" name="data-fim" />
+        </div>
+      </div>
+
+      <p class="erro-de-texto">Todos os campos devem ser preenchidos!</p>
+
+      <div class="buttons">
+        <button
+          type="button"
+          class="cancel"
+          onclick="window.location.href='/GerenciarAulas/gerenciar_aulas.html'"
+        >
+          Cancelar
+        </button>
+        <button type="submit" class="create">Criar</button>
+      </div>
+    </form>
+
+    <footer class="footer">
+      <p>
+        <b>Moeda do $aber © todos os direitos reservados<br />2025</b>
+      </p>
+      <div class="footer-right">
+        <span><b>Brasil</b></span>
+        <span><b>Suporte</b></span>
+        <a href="https://wa.me/5599999999999" target="_blank">
+          <img
+            src="../../Imagens/whatsapp.png"
+            alt="WhatsApp"
+            class="whatsapp-icon"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="editar_plano.js"></script>
+  </body>
+</html>

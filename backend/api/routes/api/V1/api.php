@@ -18,4 +18,5 @@ Route::group([
     });
 
         Route::apiResource( 'plano-aula', PlanoAulaController::class );
+        Route::get('/plano-aula/{id}', [PlanoAulaController::class, 'show']);
 });
