@@ -36,6 +36,8 @@
 
 ## Vídeo mostrando funcionamento do projeto
 
+https://github.com/user-attachments/assets/b5255a15-2b68-47ec-914c-00be04a345d2
+
 ## Como executar o projeto
 1. Subir os containeres no Docker com o comando: "**docker compose up -d**"
 2. Iniciar a API em PHP com Laravel usando o comando: "**docker exec -it faculdade_php bash**"
