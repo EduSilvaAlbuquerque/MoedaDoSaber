@@ -37,7 +37,7 @@
 ## Vídeo mostrando funcionamento do projeto
 
 ## Como executar o projeto
-1. Subir os containeres no Docker com o comando: ""
-2. Iniciar a API em PHP com Laravel usando o comando: ""
-3. No SQL Server executar o script backend\database\script.sql
-4. No VS Code, instalar o LiverServer e ativar seu funcionamento para acessar a tela inicial com o login.
+1. Subir os containeres no Docker com o comando: "**docker compose up -d**"
+2. Iniciar a API em PHP com Laravel usando o comando: "**docker exec -it faculdade_php bash**"
+3. No SQL Server executar o script **backend\database\script.sql**
+4. No VS Code, instalar o **LiverServer** e ativar seu funcionamento para acessar a tela inicial com o login.
