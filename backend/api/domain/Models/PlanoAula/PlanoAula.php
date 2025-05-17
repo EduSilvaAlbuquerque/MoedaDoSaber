@@ -15,6 +15,7 @@ class PlanoAula Extends Model {
         'id_professor',
         'titulo',
         'objetivo',
+        'conteudo',
         'metodologia',
         'recursos_necessarios',
         'criterios_avaliacao',

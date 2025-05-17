@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const campoTitulo = document.getElementById("titulo");
   const campoObjetivo = document.getElementById("objetivo");
-  const campoConteudos = document.getElementById("conteudos");
+  const campoConteudo = document.getElementById("conteudo");
   const campoMetodologia = document.getElementById("metodologia");
   const campoRecursos = document.getElementById("recursos");
   const campoCriterios = document.getElementById("criterios");
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       campoTitulo.value = dados.titulo;
       campoObjetivo.value = dados.objetivo;
-      campoConteudos.value = dados.conteudos ?? ""; 
+      campoConteudo.value = dados.conteudo ?? ""; 
       campoMetodologia.value = dados.metodologia;
       campoRecursos.value = dados.recursos_necessarios;
       campoCriterios.value = dados.criterios_avaliacao;
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const campos = [
       campoTitulo,
       campoObjetivo,
-      campoConteudos,
+      campoConteudo,
       campoMetodologia,
       campoRecursos,
       campoCriterios,
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const payload = {
       titulo: campoTitulo.value.trim(),
       objetivo: campoObjetivo.value.trim(),
-      conteudos: campoConteudos.value.trim(),
+      conteudo: campoConteudo.value.trim(),
       metodologia: campoMetodologia.value.trim(),
       recursos_necessarios: campoRecursos.value.trim(),
       criterios_avaliacao: campoCriterios.value.trim(),
@@ -72,7 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const resp = await fetch(`http://localhost:81/v1/plano-aula/${planoId}`, {
+      const url = `http://localhost:81/v1/plano-aula/${planoId}`;
+      console.log("URL da requisição PUT:", url);
+
+      const resp = await fetch(url, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

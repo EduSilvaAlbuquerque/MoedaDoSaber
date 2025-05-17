@@ -8,7 +8,7 @@ document
     const campos = [
       "titulo",
       "objetivo",
-      "conteudos",
+      "conteudo",
       "metodologia",
       "recursos",
       "criterios",
@@ -47,7 +47,7 @@ document
       id_professor: Number(idProfessor),
       titulo: document.getElementById("titulo").value.trim(),
       objetivo: document.getElementById("objetivo").value.trim(),
-      conteudos: document.getElementById("conteudos").value.trim(),
+      conteudo: document.getElementById("conteudo").value.trim(),
       metodologia: document.getElementById("metodologia").value.trim(),
       recursos_necessarios: document.getElementById("recursos").value.trim(),
       criterios_avaliacao: document.getElementById("criterios").value.trim(),
@@ -71,7 +71,7 @@ document
 
       const resultado = await response.json().catch(() => ({}));
       alert(resultado.message || "Plano de aula criado com sucesso!");
-      window.location.href = "../GerenciarAulas/gerenciar_aulas.html";
+      window.location.href = "/GerenciarAulas/gerenciar_aulas.html";
     } catch (erro) {
       alert("Erro ao enviar plano: " + erro.message);
     }

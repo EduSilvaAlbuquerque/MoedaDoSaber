@@ -12,6 +12,7 @@ class PlanoAulaRequest extends FormRequest {
             'id_professor'         => 'required|exists:professor,id',
             'titulo'               => 'required|string|max:100',
             'objetivo'             => 'required|string|max:250',
+            'conteudo'             => 'required|string|max:250',
             'metodologia'          => 'required|string|max:250',
             'recursos_necessarios' => 'required|string|max:250',
             'criterios_avaliacao'  => 'required|string|max:250',

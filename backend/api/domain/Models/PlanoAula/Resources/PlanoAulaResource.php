@@ -12,6 +12,7 @@ class PlanoAulaResource extends JsonResource {
             'id'                   => $this->id,
             'titulo'               => $this->titulo,
             'objetivo'             => $this->objetivo,
+            'conteudo'             => $this->conteudo,
             'metodologia'          => $this->metodologia,
             'recursos_necessarios' => $this->recursos_necessarios,
             'criterios_avaliacao'  => $this->criterios_avaliacao,

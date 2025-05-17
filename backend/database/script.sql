@@ -29,6 +29,7 @@ CREATE TABLE dbo.plano_aula
     titulo               nvarchar(100) NULL,
     objetivo             nvarchar(250) NULL,
     metodologia          nvarchar(250) NULL,
+	conteudo			 nvarchar(250) NULL,
     recursos_necessarios nvarchar(250) NULL,
     criterios_avaliacao  nvarchar(250) NULL,
     inicio_cronograma    date          NULL,

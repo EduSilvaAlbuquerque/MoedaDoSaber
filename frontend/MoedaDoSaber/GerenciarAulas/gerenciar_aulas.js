@@ -4,18 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
   async function carregarPlanos() {
     try {
       const response = await fetch("http://localhost:81/v1/plano-aula");
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      if (!response.ok)
+        throw new Error(`HTTP error! status: ${response.status}`);
       const { data: planos } = await response.json();
 
       plansGrid.innerHTML = "";
 
-      planos.forEach(plano => {
+      planos.forEach((plano) => {
         const planDiv = document.createElement("div");
         planDiv.className = "plan-item";
         planDiv.innerHTML = `
           <p><strong>Plano de Aula:</strong> ${plano.titulo}</p>
-          <p><strong>Início:</strong> ${plano.inicio_cronograma}</p>
-          <p><strong>Fim:</strong> ${plano.fim_cronograma}</p>
+          <p><strong>Início:</strong> ${formatarData(plano.inicio_cronograma)}</p>
+          <p><strong>Fim:</strong> ${formatarData(plano.fim_cronograma)}</p>
           <div class="plan-actions">
             <button class="edit-btn" data-id="${plano.id}"><img src="../Imagens/Editar.png" alt="Editar"></button>
             <button class="delete-btn" data-id="${plano.id}"><img src="../Imagens/Lixeira.png" alt="Excluir"></button>
@@ -27,17 +28,30 @@ document.addEventListener("DOMContentLoaded", () => {
       adicionarEventos();
     } catch (error) {
       console.error("Erro ao carregar planos:", error);
-      plansGrid.innerHTML = '<p class="error">Falha ao carregar planos de aula.</p>';
+      plansGrid.innerHTML =
+        '<p class="error">Falha ao carregar planos de aula.</p>';
     }
   }
 
+  function formatarData(dataStr) {
+    if (!dataStr) return "";
+    const data = new Date(dataStr);
+    const dia = String(data.getDate()).padStart(2, "0");
+    const mes = String(data.getMonth() + 1).padStart(2, "0");
+    const ano = data.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+  }
+
   function adicionarEventos() {
-    document.querySelectorAll(".delete-btn").forEach(button => {
+    document.querySelectorAll(".delete-btn").forEach((button) => {
       button.addEventListener("click", async () => {
         const id = button.dataset.id;
         if (confirm("Tem certeza que deseja apagar este plano de aula?")) {
           try {
-            const resp = await fetch(`http://localhost:81/v1/plano-aula/${id}`, { method: 'DELETE' });
+            const resp = await fetch(
+              `http://localhost:81/v1/plano-aula/${id}`,
+              { method: "DELETE" }
+            );
             if (resp.ok) {
               alert("Plano de aula apagado com sucesso!");
               carregarPlanos();
@@ -50,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    document.querySelectorAll(".edit-btn").forEach(button => {
+    document.querySelectorAll(".edit-btn").forEach((button) => {
       button.addEventListener("click", () => {
         window.location.href = `../Plano/EditarPlano/editar_plano.html?id=${button.dataset.id}`;
       });
@@ -59,4 +73,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   carregarPlanos();
 });
-
