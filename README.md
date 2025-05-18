@@ -41,5 +41,8 @@ https://github.com/user-attachments/assets/b5255a15-2b68-47ec-914c-00be04a345d2
 ## Como executar o projeto
 1. Subir os containeres no Docker com o comando: "**docker compose up -d**"
 2. Iniciar a API em PHP com Laravel usando o comando: "**docker exec -it faculdade_php bash**"
+   - Instalar dependencias: `composer install`  
+   - Em seguida, copiar o arquivo `.env.example` para o `.env` e alterar as configurações de banco para conectar ao seu SQL.
+   - Gerar as chaves do artisan:  `php artisan key:generate`  
 3. No SQL Server executar o script **backend\database\script.sql**
 4. No VS Code, instalar o **LiverServer** e ativar seu funcionamento para acessar a tela inicial com o login.
